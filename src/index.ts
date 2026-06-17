@@ -1,4 +1,4 @@
-export { Button } from "./components/Button";
+export { Button } from "./components/Button/Button";
 export { Input } from "./components/Input";
 export { Modal } from "./components/Modal";
 export { Table } from "./components/Table";
