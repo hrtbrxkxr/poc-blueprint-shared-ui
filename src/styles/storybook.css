@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./theme.css";
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: #111827;
+}
