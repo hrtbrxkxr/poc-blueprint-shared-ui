@@ -1,4 +1,4 @@
-# @platform/shared-ui
+# @hrtbrxkxr/shared-ui
 
 Shared, brand-agnostic UI component library consumed by the shell and every module frontend. Built on Tailwind CSS v4 + shadcn/ui (Radix primitives, class-variance-authority).
 
@@ -15,8 +15,8 @@ Button, Input, Label, Card, Dialog, Table, Tabs, Sonner (toasts), Spinner.
 ## Usage
 
 ```tsx
-import { Button } from "@platform/shared-ui";
-import "@platform/shared-ui/theme.css"; // design tokens — import once in your app's entry CSS
+import { Button } from "@hrtbrxkxr/shared-ui";
+import "@hrtbrxkxr/shared-ui/theme.css"; // design tokens — import once in your app's entry CSS
 ```
 
 ## This repo runs standalone
@@ -37,7 +37,7 @@ pnpm build       # tsc -> dist/ (JS + .d.ts) + a precompiled Tailwind CSS bundle
 pnpm dev         # tsc --watch + CSS --watch, keeps dist/ live while editing
 ```
 
-`dist/shared-ui.css` exists because a consumer that only has this package installed via npm (not its source) can't content-scan its `.tsx` files for Tailwind to generate utility classes from — this package ships its own fully-compiled CSS instead, exported as `@platform/shared-ui/styles.css`. A module's standalone dev playground imports that; the consumer shell instead scans this package's real source directly (it has it, via the submodule checkout) and only needs `@platform/shared-ui/theme.css` for the design tokens.
+`dist/shared-ui.css` exists because a consumer that only has this package installed via npm (not its source) can't content-scan its `.tsx` files for Tailwind to generate utility classes from — this package ships its own fully-compiled CSS instead, exported as `@hrtbrxkxr/shared-ui/styles.css`. A module's standalone dev playground imports that; the consumer shell instead scans this package's real source directly (it has it, via the submodule checkout) and only needs `@hrtbrxkxr/shared-ui/theme.css` for the design tokens.
 
 ## Publishing
 
