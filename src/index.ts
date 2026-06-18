@@ -27,4 +27,10 @@ export type {
   FunnelChartDatum,
   FunnelOrient,
 } from "./components/Chart/FunnelChart/types";
+export { RadarChart } from "./components/Chart/RadarChart/RadarChart";
+export type {
+  RadarChartProps,
+  RadarChartIndicator,
+  RadarChartSeries,
+} from "./components/Chart/RadarChart/types";
 export * from "./icons";
